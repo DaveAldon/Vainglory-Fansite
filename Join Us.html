@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join Us</title>
+<link type="text/css" rel="stylesheet" href="Join%20Us_files/layout.css">
+<link type="text/css" rel="stylesheet" href="Join%20Us_files/joinus.css">
+<link type="text/css" rel="stylesheet" href="Join%20Us_files/form.css">
+<link rel="shortcut icon" type="image/png" href="http://cis.gvsu.edu/%7Ecrawford/assets/favicon.png">
+<script src="Join%20Us_files/jquery-1.js"></script>
+<script>
+   $(document).ready(function(){
+    $("#nav-mobile").html($("#nav-main").html()); 
+    $("#nav-trigger span").click(function(){
+        if ($("nav#nav-mobile ul").hasClass("expanded")) {
+            $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+            $(this).removeClass("open");
+        } else {
+            $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+            $(this).addClass("open");
+        }
+    });
+});
+
+</script>
+</head>
+
+<body>
+	<nav id="nav-main">
+    <ul>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/index.html">Home</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/about.html">About</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/heroes.html">Heroes</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/map.html">Map</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/tournament.html">Tournaments</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/requirements.html">Requirements</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/streaming.html">Streaming</a></li>
+        <li><a href="http://cis.gvsu.edu/%7Ecrawford/joinus.html">Join Us</a></li>
+	</ul>
+    </nav>
+    <div id="nav-trigger">
+    	<span>Menu</span>
+	</div>
+    <nav id="nav-mobile">
+    <ul>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/index.html">Home</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/about.html">About</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/heroes.html">Heroes</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/map.html">Map</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/tournament.html">Tournaments</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/requirements.html">Requirements</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/streaming.html">Streaming</a></li>
+        <li><a href="http://cis.gvsu.edu/%7Ecrawford/joinus.html">Join Us</a></li>
+	</ul>
+    </nav>
+
+<article>
+	<div id="titleback">	
+	<h1>VAINGLORY IS TEAMWORK</h1>
+	</div>
+    <p class="big">Join Our Team!</p>
+    <p>Vainglory depends on cooperation with groups and diverse people 
+from around the world! Use the following resources built by fans and 
+communities to increase your skills and learn more about the game. If 
+you're interested in being a part of a local Michigan team, fill out the
+ form and we'll get in contact with you! Also check out our current team
+ roster below.</p>
+</article>
+
+
+<div id="twoImage">
+<a target="_blank" href="http://vaingloryfire.com/" title="Vainglory Official Fansite"><img id="firelogo" src="Join%20Us_files/firelogo.png" alt="fansite logo"></a>
+    <a target="_blank" href="http://superevilmegacorp.com/" title="Vainglory Developer Website"><img id="evillogo" src="Join%20Us_files/evillogo.jpg" alt="creators logo"></a>
+  </div>
+
+<table>
+  <caption>Team Roster</caption>
+  <tbody><tr>
+    <th>Username</th>
+    <th>Rank (1-10, Bronze-Gold)</th>
+    <th>Primary Role</th>
+  </tr>
+  <tr>
+    <td>NotDavid</td>
+    <td>6 Bronze</td>
+    <td>Lane</td>
+  </tr>
+  <tr>
+    <td>MyNameIsAarom</td>
+    <td>4 Bronze</td>
+    <td>Support</td>
+  </tr>
+  <tr>
+    <td>Diggs</td>
+    <td>5 Gold</td>
+    <td>Jungle</td>
+  </tr>
+  <tr>
+    <td>EMP</td>
+    <td>5 Bronze</td>
+    <td>Jungle</td>
+  </tr>
+  <tr>
+    <td>Techcop</td>
+    <td>4 Gold</td>
+    <td>Lane</td>
+  </tr>
+  <tr>
+    <td>XxSheikoxX</td>
+    <td>5 Bronze</td>
+    <td>Jungle</td>
+  </tr>
+</tbody></table>
+
+<p class="big">Contact Form</p>
+
+<form action="feedback.php" method="post">
+
+        <div id="right" class="red">* Required</div>       
+      	<fieldset id="contactinfo">
+
+            <legend><span>Contact Information</span></legend>
+            <label for="firstnameinput">
+              	First Name
+              	<input name="firstname" id="firstnameinput" placeholder="First name" required="" type="text"><span class="red">*</span>
+            </label>
+        
+             <label for="lastnameinput">
+        		 Last Name
+          		<input name="lastname" id="lastnameinput" placeholder="Last name" required="" type="text">
+        	<span class="red">*</span></label>
+        
+            <label for="emailinput">
+              	Email
+                <input name="email" id="emailinput" placeholder="address@example.com" required="" type="email"><span class="red">*</span>
+            </label>
+            
+			<label for="cityinput">
+              City
+              <input name="city" id="cityinput" type="text">
+            </label>
+            <label for="stateinput">
+              State
+              
+              	  <select id="state" name="state">
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI" selected="selected">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                     
+				</select>				 
+            </label>
+		</fieldset>
+      
+      
+<!-- RECEIVE UPDATES AND INFORMATION --> 			
+		<fieldset id="receiveinfo">
+			  <legend><span>Receive updates and information</span></legend>
+			  <label for="yes">
+				<input id="yes" name="yes" value="Receive Information" checked="checked" type="checkbox">
+				Yes
+			  </label>
+			  <label for="no">
+				<input id="no" name="no" value="Receive Information" type="checkbox">
+				No
+			  </label>
+		 </fieldset>
+		
+		<fieldset id="howoften">
+			  <legend><span>How often?</span></legend>
+			  <label for="daily">
+				<input name="howoften" id="daily" value="Daily" checked="checked" type="radio">
+				Daily
+			  </label>
+			  
+			  <label for="weekly">
+				<input name="howoften" id="weekly" value="Weekly" type="radio">
+				Weekly
+			  </label>
+              <label for="monthly">
+				<input name="howoften" id="monthly" value="Monthly" type="radio">
+				Monthly
+			  </label>
+		</fieldset>
+			
+		 <!-- End of fieldset for Receive updates and information -->
+		  
+		  
+<!-- MESSAGE -->           
+		  <fieldset id="message">
+			<legend><span>Message</span></legend>
+			
+			<label for="feedback">
+			 
+			  <textarea id="feedback" name="feedback" rows="4" cols="35" placeholder="I found incorrect information on this site..."></textarea>
+			</label>
+		  </fieldset>
+					  
+<!-- SUBMIT / RESET SECTION -->                             
+		 <fieldset id="submitbutton">
+			<input value="Submit!" type="submit">
+		  </fieldset>
+		  
+		   <fieldset id="resetbutton">
+			<input value="Reset" type="reset">
+		  </fieldset>
+		  
+     </form>
+
+  
+<footer>
+	<h2 id="footerText">
+    Website design made by David Crawford. All other visual and intellectual content is owned by Vainglory © 2015.
+    </h2>
+</footer>
+
+
+</body></html>

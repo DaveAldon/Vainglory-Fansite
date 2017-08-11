@@ -1,0 +1,52 @@
+ol {
+	color: #FFF;
+	width: 70%;
+	font-size: 20px;
+	margin: auto;
+	margin-top: 25px;
+}
+
+li {
+	margin-bottom: 25px;	
+}
+
+p {
+	margin: auto;
+	margin-top: 20px;
+	width: 50%;
+}
+
+#highDetailMap {
+	width: 100%;
+	/*padding-top: -50px;*/
+	margin-top: -30px;
+	}
+
+#titleback {
+	position: relative;
+	background: #730015;
+	margin-top: -10px;
+	}
+	
+h3 {
+	font-size: 70px;	
+}
+
+h1 {
+	margin-bottom: -20px;
+}
+
+/* =Media Queries
+-------------------------------------------------------------- */
+ @media screen and (max-width: 1200px) {
+	 h1 {
+	font-size: 50px;	
+}
+ }
+ 
+ @media screen and (max-width: 600px) {
+	 h1 {
+	font-size: 40px;	
+}
+ }
+ 

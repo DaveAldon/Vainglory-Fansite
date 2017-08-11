@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Map</title>
+<link type="text/css" rel="stylesheet" href="Map_files/layout.css">
+<link type="text/css" rel="stylesheet" href="Map_files/maplayout.css">
+<link rel="shortcut icon" type="image/png" href="http://cis.gvsu.edu/%7Ecrawford/assets/favicon.png">
+<script src="Map_files/jquery-1.js"></script>
+<script>
+   $(document).ready(function(){
+    $("#nav-mobile").html($("#nav-main").html());
+    $("#nav-trigger span").click(function(){
+        if ($("nav#nav-mobile ul").hasClass("expanded")) {
+            $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+            $(this).removeClass("open");
+        } else {
+            $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+            $(this).addClass("open");
+        }
+    });
+});
+
+</script>
+</head>
+
+<body>
+	<nav id="nav-main">
+    <ul>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/index.html">Home</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/about.html">About</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/heroes.html">Heroes</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/map.html">Map</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/tournament.html">Tournaments</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/requirements.html">Requirements</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/streaming.html">Streaming</a></li>
+        <li><a href="http://cis.gvsu.edu/%7Ecrawford/joinus.html">Join Us</a></li>
+	</ul>
+    </nav>
+    <div id="nav-trigger">
+    	<span>Menu</span>
+	</div>
+    <nav id="nav-mobile">
+    <ul>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/index.html">Home</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/about.html">About</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/heroes.html">Heroes</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/map.html">Map</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/tournament.html">Tournaments</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/requirements.html">Requirements</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/streaming.html">Streaming</a></li>
+        <li><a href="http://cis.gvsu.edu/%7Ecrawford/joinus.html">Join Us</a></li>
+	</ul>
+    </nav>
+
+	<img id="highDetailMap" src="Map_files/map.jpg" alt="The Halcyon Fold">
+
+<article>
+	<div id="titleback">	
+	<h1>THE HALCYON FOLD</h1>
+	</div>
+    <ol id="maplegend">
+		<li>The Vain Crystal: Each team controls one and must protect it from 
+the enemy. The goal of Vainglory is to destroy your opponent's Vain 
+Crystal!</li>
+		<li>Turrets: In order to destroy your opponent's Vain Crystal, you 
+must destroy all of their turrets first. Minions run along the top lane 
+and attack each other and the turrets, and it's up to you to help push 
+them along and fight other heroes. Turrets are strong so be prepared! 
+You could get ambushed easily from the bushes near each turret. Each 
+Vain crystal is protected by 2 turrets as well, but once they go down 
+anyone can attack your base!</li>
+		<li>Minion Mines: Defeat the miners to gain control of each Minion 
+Mine. Each mine under your team's control increases the power of your 
+lane minion substantially, helping them destroy turrets and your 
+opponent's Vain crystal!</li>
+        <li>Shops: Each base has a shop to upgrade/buy items for your 
+player. There's also one in the jungle to use, but be careful, you could
+ easily be ambushed if you don't pay attention!</li>
+        <li>Gold Miner/Kraken: Defeat the Gold Miner to gain a large 
+gold bonus for your team (currency used to buy items), and after 15 
+minutes, the Kraken takes the miner's place. Attack the Kraken if you 
+dare, and whatever team deals the final blow to her will gain her 
+support and she'll fight for you. Controlling the Kraken often decides 
+the winner of many games, she's strong so don't fight her alone!</li>
+    
+</ol></article>
+
+<footer>
+	<h2 id="footerText">
+    Website design made by David Crawford. All other visual and intellectual content is owned by Vainglory © 2015.
+    </h2>
+</footer>
+
+
+</body></html>

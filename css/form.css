@@ -1,0 +1,73 @@
+		  form {
+		  background: #730015; /*The darker red background.  */
+		  padding: 10px; /*Thickness of darker green around the form. */
+		  border-radius: 10px; /* Creates the rounded corners. */
+		  max-width:35em;margin: auto;
+		  color:#FFF;} /* Contains all the content within 35em so the form doesn't stretch out too much on a larger screen */
+
+		/*Styles to format the fieldset groups, including the space around it and the lighter green background. Relative positioning keeps elements in the normal flow and can be used to "nudge" elements slightly. Relative positioning can be quirky*/
+		fieldset {
+		  margin-bottom: 10px; 
+		  position: relative; /* Declaration added for the 'legend span' and 'contactinfo input' rules below.  These rules will be positioned absolute to this element as this fieldset is the parent element.*/
+		  padding: 2.5em 1em 0.5em 1em;
+		  background: #212121;} /*The lighter green background in the fieldset groups */
+		 
+			
+		/*Styles the text in the upper-left corner of each fieldset group and the text on the submit button.  */
+		legend, #submit {font-family: "brandon_grotesque_regularRg", "Times New Roman";
+		}
+
+		/* Styles for the 4 larger legends, text in the upper-left of each fieldset group. These 4 legends are surrounded by a span tag, therefore I'm  targeting them with the 'legend span' selector.  The position of absolute means the elements are taken out of the normal browser flow. Here, I use the left offset of 0 to get the legends moved over to the far left as possible of the other positioned content, which is the fieldset.  Positions can be confusing and can a bit of trial and error.*/
+		legend span {
+		  position: absolute;
+		  left: 0;
+		  margin-top: 0.5em;
+		  margin-left: 0.5em;}
+		  		 
+		 /*Pseudo-classes are used to define a special state of an element. You've seen pseudo classes for hyperlinks, which change color depending on the state (link, visited, hover, active). Here is another pseudo-class, focus. Focus is used for the input and textarea elements. When a user clicks in one of these elements (which is the state), the element has a light-gray color.    */ 
+		input:focus, textarea:focus {
+		  background: #FFF;}
+		  
+		/*Removes the default border created by fieldset groups.  */
+		#contactinfo, #receiveinfo, #message, #submitbutton, #howoften {
+		  border: none;}
+		  
+		 /*The text box and the text name are grouped together with the label.  This rule styles all the labels within the Contact Information fieldset group.  */ 
+		#contactinfo label {
+		  display: block;
+		  position: relative;
+		  margin: 12px 0;
+		  }	  
+			  
+		/* The input and state elements (the text fields and state dropdown) in the Contact Information group have an absolute position, 100px from the left of the parent element, which is the fieldset (fieldset has a relative position).  */
+		#contactinfo input, #state {
+		  position: absolute;
+		  left: 100px;
+		  }		  
+		  
+		/* The width of the input elements*/
+		#lastnameinput, #firstnameinput, #emailinput, #cityinput  {
+			width: 15em;
+			}	
+		
+		/* Add some space to the right of the Receive updates and information checkboxes*/
+		#receiveinfo label {margin-right: 25px;}
+		
+		/* Created class to change the * to red color, and then an id to align 'Required' to the right.*/
+		.red {color: #f00;}
+		#right {text-align: right;}
+		  
+		/* Styles for buttons at bottom of form. The buttons are inside a <fieldset> which the browser displays as a block element. I want the buttons to appear side-by-side, therefore I added the declaration display:inline.  The buttons need a background color to  match the existing background surrounding the edges of the form to blend. Otherwise the lighter fieldset background shows. */		  
+		#submitbutton {
+		  display: inline;
+		  border: none;
+		  background: #212121;
+		  padding: 0.5em 0 0 0;
+		  text-align: center;}
+		  
+		#resetbutton {
+		  display: inline;
+		  border: none;
+		 background: #212121;
+		  padding: 0.5em 0 0 0;
+		  text-align: center;}

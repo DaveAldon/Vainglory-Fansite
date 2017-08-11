@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heroes</title>
+<link type="text/css" rel="stylesheet" href="Heroes_files/layout.css">
+<link type="text/css" rel="stylesheet" href="Heroes_files/heroeslayout.css">
+<link rel="shortcut icon" type="image/png" href="http://cis.gvsu.edu/%7Ecrawford/assets/favicon.png">
+<script src="Heroes_files/jquery-1.js"></script>
+<script>
+   $(document).ready(function(){
+    $("#nav-mobile").html($("#nav-main").html());
+    $("#nav-trigger span").click(function(){
+        if ($("nav#nav-mobile ul").hasClass("expanded")) {
+            $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+            $(this).removeClass("open");
+        } else {
+            $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+            $(this).addClass("open");
+        }
+    });
+});
+
+</script>
+</head>
+
+
+
+<body>
+	<nav id="nav-main">
+    <ul>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/index.html">Home</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/about.html">About</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/heroes.html">Heroes</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/map.html">Map</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/tournament.html">Tournaments</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/requirements.html">Requirements</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/streaming.html">Streaming</a></li>
+        <li><a href="http://cis.gvsu.edu/%7Ecrawford/joinus.html">Join Us</a></li>
+	</ul>
+    </nav>
+    <div id="nav-trigger">
+    	<span>Menu</span>
+	</div>
+    <nav id="nav-mobile">
+    <ul>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/index.html">Home</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/about.html">About</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/heroes.html">Heroes</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/map.html">Map</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/tournament.html">Tournaments</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/requirements.html">Requirements</a></li>
+		<li><a href="http://cis.gvsu.edu/%7Ecrawford/streaming.html">Streaming</a></li>
+        <li><a href="http://cis.gvsu.edu/%7Ecrawford/joinus.html">Join Us</a></li>
+	</ul>
+    </nav>
+
+<article>
+	<div id="titleback">	
+	<h1>Heroes of Vainglory</h1>
+	</div>
+    <img id="fortressImg" src="Heroes_files/fortress.png" alt="Fortress the canine hero">
+    <p>	Heroes are at the heart of Vainglory, and are controlled by 
+players in 3 versus 3 battles. Fortress is one of these characters, a 
+canine hero of the halcyon fold. He is a support character who has 
+abilities that are enhanced when around other players. This guardian is a
+ snarling, frightening sight in the jungle. He stalks prey, closes in 
+with teammates, flanks targets and creates challenging, multi-front 
+confrontations. Stay near your allies and bite and claw your way to 
+kills!</p>
+    <p>Heroes have three abilities unique to one another, and each 
+ability provides help to teammates, or yourself, in order to gain the 
+advantage. When a hero dies, they respawn after a certain amound of time
+ and the player can jump right back into battle!</p>
+</article>
+
+<footer>
+	<h2 id="footerText">
+    Website design made by David Crawford. All other visual and intellectual content is owned by Vainglory © 2015.
+    </h2>
+</footer>
+
+
+</body></html>
